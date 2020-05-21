@@ -1,7 +1,5 @@
 # Dynamic Resort Website made in React
 
----
-
 ## Stack Used:
 
 - Reactjs
