@@ -5,8 +5,9 @@
 ## Stack Used:
 
 - Reactjs
+- React-icons
 - Nodejs
-- Conentful Headless CMS
+- Contentful
 
 ---
 
