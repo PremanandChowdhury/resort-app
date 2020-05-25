@@ -25,7 +25,7 @@ export default function Room({ room }) {
 }
 
 // FOR VALIDATING THE PROPS
-Room.propType = {
+Room.propTypes = {
   room: PropTypes.shape({
     name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
