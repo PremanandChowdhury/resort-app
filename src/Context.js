@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import items from "./data";
+// import items from "./data";  // Local development Data
 import Client from "./Contentful";
 
 // const MyContext = React.createContext(defaultValue)
@@ -22,7 +22,7 @@ class RoomProvider extends Component {
     pets: false,
   };
 
-  // getData: to get data from the remote/ dynamic
+  // getData: to get data from contentful
   getData = async () => {
     try {
       let response = await Client.getEntries({
@@ -49,26 +49,8 @@ class RoomProvider extends Component {
     }
   };
 
-  // componentDidMount : when components has mount
   componentDidMount() {
     this.getData();
-    // let rooms = this.formatData(items);
-    // // filter: with feature key
-    // let featuredRooms = rooms.filter((room) => room.featured === true);
-
-    // let maxPrice = Math.max(...rooms.map((room) => room.price));
-    // let maxSize = Math.max(...rooms.map((room) => room.size));
-
-    // // set the state
-    // this.setState({
-    //   rooms,
-    //   featuredRooms,
-    //   sortedRooms: rooms,
-    //   loading: false,
-    //   price: maxPrice,
-    //   maxPrice,
-    //   maxSize,
-    // });
   }
 
   // formatData: formats the required data into resuable variables
