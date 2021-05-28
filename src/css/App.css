@@ -73,9 +73,12 @@ h6 {
   color: var(--primaryColor);
 }
 .loading {
-  text-transform: capitalize;
+  margin: 0 auto;
+}
+.loading img {
   text-align: center;
-  margin-top: 3rem;
+  height: 100px;
+  width: 100px;
 }
 .error {
   text-align: center;
@@ -162,13 +165,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("../images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url('../images/defaultBcg.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("../images/room-2.jpeg");
+  background-image: url('../images/room-2.jpeg');
   min-height: 60vh;
 }
 /* End of Hero */
@@ -517,3 +520,27 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 4px solid var(--primaryColor);
+  padding: 0.6rem 0;
+}
+.footer .heart {
+  color: rgb(255, 0, 0);
+}
+.footer-links {
+  list-style-type: none;
+  display: flex;
+}
+.footer-links > li {
+  margin-right: 0.6rem;
+}
+.social-icon {
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+}
+/* end of footer */
